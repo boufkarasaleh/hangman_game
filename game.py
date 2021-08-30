@@ -6,7 +6,6 @@ print(needs.logo)
 # Chosing a random word
 chosen_word = random.choice(needs.words)
 
-print(chosen_word)
 lives = 6
 # Chosen_word letters in list of blanks
 display = []
@@ -25,8 +24,7 @@ while not end_of_game:
     for position in range(len(chosen_word)):
         letter = chosen_word[position]
         if user_guess == letter:
-            display[position] = letter
-    print(display)
+            display[position] = letter 
 
     # If there is no more blanks in display the you win
     if "_" not in display:
